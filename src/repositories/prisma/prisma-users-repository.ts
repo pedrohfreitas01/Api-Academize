@@ -3,6 +3,8 @@ import { Prisma } from "@prisma/client";
 import type { UsersRepository } from "../users-repository.js";
 import { prisma } from "lib/prisma.js";
 
+// Aqui é que realmente acessa o banco
+
 export class PrismaUsersRepository implements UsersRepository {
   async findByEmail(email: string) {
     const user = await prisma.user.findUnique({
