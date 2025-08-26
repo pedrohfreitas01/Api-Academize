@@ -13,6 +13,7 @@ src/generated/prisma/
 # Arquivos de ambiente
 .env
 .env.local
+coverage
 
 
 # Logs
