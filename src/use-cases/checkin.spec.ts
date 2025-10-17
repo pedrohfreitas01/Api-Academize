@@ -100,7 +100,7 @@ describe("CheckIn Use Case", () => {
       phone: "",
     });
 
-    expect(() =>
+    await expect(() =>
       sut.execute({
         gymId: "gym-02",
         userId: "user-01",
