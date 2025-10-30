@@ -3,7 +3,7 @@ import type { CheckInsRepository } from "repositories/check-ins-repository.js";
 
 interface GetUserMetricUseCaseRequest {
   userId: string;
-  page: number;
+  page?: number;
 }
 interface GetUserMetricUseCaseResponse {
   checkInsCount: number;
